@@ -39,7 +39,7 @@ def url_decomposed(url):
     except ValueError:
         return param
 
-def mode_switch(url, filename):    #对于A&A可能需要有get变为post
+def mode_switch(url, filename):    #对于A&A可能需要由get变为post
     try:
         urlretrieve(url, filename, reporthook=report)
     except URLError:
